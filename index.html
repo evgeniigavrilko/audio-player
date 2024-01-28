@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head class="head__page">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Audio Player</title>
+</head>
+
+<body class="body__page">
+  <div class="container">
+    <div class="audio__player">
+      <img class="audio__cover" id="audioCover" src="cover.jpg" alt="cover image">
+      <div class="audio__panel">
+        <div class="player__info">
+          <div class="track__info">
+            <h2 class="artist" id="artist">Unknown</h2>
+            <h3 class="track" id="track">Audio</h3>
+          </div>
+        </div>
+        <span class="audio__time" id="currentTime">0:00 / 0:00</span>
+        <input type="range" class="seek__bar range" id="seekBar" value="0" step="0.01">
+        <div class="controls">
+          <button class="button" id="prevBtn"><span class="icon-backward2 icon__controls"></span></button>
+          <button class="button" id="playPauseBtn"><span class="icon-play3 icon__controls"></span></button>
+          <button class="button" id="nextBtn"><span class="icon-forward3 icon__controls"></span></button>
+          <button class="button" id="repeatBtn"><span class="icon-loop icon__controls"></span></button>
+          <div class="volume__bar-wrapper">
+            <input class="volume__bar range" type="range" id="volumeBar" value="50" step="0.01">
+            <span class="volume__icon icon-volume-mute icon__controls"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <audio id="audio"></audio>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
